@@ -20,7 +20,7 @@
               <ul class="right hide-on-med-and-down">
                 <li><a href="{{ url_for('home') }}">Home</a></li> <!--this is the route from our routes file-->
                 <li><a href="">New Task</a></li> <!--this is the route from our routes file-->
-                <li><a href="">Categories</a></li> <!--this is the route from our routes file-->
+                <li><a href="{{ url_for('categories') }}">Categories</a></li> <!--this is the route from our routes file-->
 
               </ul>
             </div>
@@ -29,7 +29,7 @@
           <ul class="sidenav" id="mobile-demo">
             <li><a href="{{ url_for('home') }}">Home</a></li> <!--this is the route from our routes file-->
             <li><a href="">New Task</a></li> <!--this is the route from our routes file-->
-            <li><a href="">Categories</a></li> <!--this is the route from our routes file-->
+            <li><a href="{{ url_for('categories') }}">Categories</a></li> <!--this is the route from our routes file-->
 
           </ul>
     </header>

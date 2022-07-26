@@ -2,7 +2,7 @@ from taskmanager import db
 
 
 class Category(db.Model):
-    #schema for the Category Model
+    # schema for the Category Model
     id = db.Column(db.Integer, primary_key=True)
     category_name = db.Column(db.String(25), unique=True, nullable=False)
     tasks = db.relationship("Task", backref="category", cascade="all, delete", lazy=True)
