@@ -7,10 +7,10 @@ document.addEventListener('DOMContentLoaded', function () {
     let datepicker = document.querySelectorAll(".datepicker");
     M.Datepicker.init(datepicker, {
         format: "dd mmmm, yyyy",
-       i18n: {done: "Select"}
-    });
+       i18n: {done: "Select"};
 
     // select dropdown
-    let selects = document.querySelectorAll('select');
-      M.FormSelect.init(elems, options);
+    let selects = document.querySelectorAll("select");
+    M.FormSelect.init(selects);
+  });
 });
